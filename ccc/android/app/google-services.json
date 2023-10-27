@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "746314154452",
+    "firebase_url": "https://ccc-lock-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ccc-lock",
+    "storage_bucket": "ccc-lock.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746314154452:android:dc53acf8b9900591999641",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMT96RXdEDzF8cSeY4uwFJ-tK6KgwNtr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746314154452:android:3162b07bcfdac402999641",
+        "android_client_info": {
+          "package_name": "com.example.ccc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMT96RXdEDzF8cSeY4uwFJ-tK6KgwNtr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
