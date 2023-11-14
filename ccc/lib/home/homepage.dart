@@ -1,3 +1,4 @@
+import 'package:ccc/authenticate/sign_in.dart';
 import 'package:flutter/material.dart';
 import 'package:ccc/my_flutter_app_icons.dart';
 class MyHomePage extends StatefulWidget {
@@ -140,6 +141,17 @@ class _MyHomePageState extends State<MyHomePage> {
 
         ],
 
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        backgroundColor: Colors.amber,
+        onPressed: (){
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context)=> const SignIn()),
+          );
+        },
+        label: const Text("sign in"),
+        icon: const Icon(Icons.arrow_back, color: Colors.white,)
       ),
     );
 

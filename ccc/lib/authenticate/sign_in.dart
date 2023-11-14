@@ -19,12 +19,16 @@ class _SignInState extends State<SignIn> {
         title: const Text('Sign in to Arc'),
       ),
         body: Container(
-        padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 50.0),
-          child: ElevatedButton(
+        padding: const EdgeInsets.symmetric(vertical: 50.0, horizontal: 110.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children:<Widget> [ElevatedButton(
             child: const Text("Sign in Anonmously"),
             onPressed: ()async{}
           )
+    ]
     )
+        ),
     );
   }
 }
