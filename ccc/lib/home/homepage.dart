@@ -16,6 +16,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blueGrey,
       appBar: AppBar(
         title: const Text("Arc",
           textAlign: TextAlign.left,
@@ -50,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         size: 25,
                         color: isPressed1
                             ? Colors.grey
-                            : Colors.white70,
+                            : Colors.amber[100],
 
                       )),),
 
@@ -67,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         size: 25,
                         color: isPressed2
                             ? Colors.grey
-                            : Colors.white70,
+                            : Colors.amber[100],
 
                       )),)
 
@@ -111,7 +112,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         size: 25,
                         color: isPressed3
                             ? Colors.grey
-                            : Colors.white70,
+                            : Colors.amber[100],
 
                       )),),
                 CircleAvatar(
@@ -127,7 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         size: 25,
                         color: isPressed4
                             ? Colors.grey
-                            : Colors.white70,
+                            : Colors.amber[100],
 
                       )),)
 
