@@ -38,16 +38,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
+  bool isPressed1 = false;
+  bool isPressed2 = false;
+  bool isPressed3 = false;
+  bool isPressed4 = false;
 bool light =true;
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
         title: const Text("Arc",
@@ -70,61 +67,99 @@ bool light =true;
               child:  Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children:<Widget>[
-                  IconButton(onPressed: (){},
-                      icon:
-                      const Icon(
+                  CircleAvatar(
+                    radius: 30,
+                    backgroundColor: isPressed1?Colors.black12:Colors.lightGreen,
+                    child: IconButton(onPressed: (){
+                          setState(() {
+                            isPressed1 = !isPressed1;
+                          });
+                        },
+                      icon: Icon(
                           MyFlutterApp.fan,
-                          size: 24,
+                          size: 25,
+                        color: isPressed1
+                            ? Colors.grey
+                            : Colors.white70,
 
-                      )),
+                      )),),
 
-                  IconButton(onPressed: (){},
-                      icon: const Icon(
-                        MyFlutterApp.fan,
-                        size: 24,
+                  CircleAvatar(
+                    radius: 30,
+                    backgroundColor: isPressed2?Colors.black12:Colors.lightGreen,
+                    child: IconButton(onPressed: (){
+                      setState(() {
+                        isPressed2 = !isPressed2;
+                      });
+                    },
+                        icon: Icon(
+                          MyFlutterApp.fan,
+                          size: 25,
+                          color: isPressed2
+                              ? Colors.grey
+                              : Colors.white70,
 
-                      )),
+                        )),)
 
                 ],
               ),),
             Container(
-              padding: const EdgeInsets.all(60.00),
+              padding: const EdgeInsets.all(40.00),
               margin: const EdgeInsets.all(16.00),
-              child:  Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children:<Widget>[
-                    Switch(value: light,
+
+              child: Transform.scale(
+                  scale: 2.0,
+                  child: Switch(value: light,
+                        activeColor: Colors.green,
+                        activeTrackColor: Colors.lightGreen,
+
                         onChanged: (bool value){
                       setState(() {
                         light=value;
                       });
                         }
 
-                    )
-                  ]
-    )),
+                    ))
+    ),
 
               Container(
               padding: const EdgeInsets.all(60.00),
               margin: const EdgeInsets.all(16.00),
-              child:  Row(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children:<Widget>[
-                  IconButton(onPressed:(){},
-                  icon: const Icon(
-                    MyFlutterApp.fan,
-                    size: 24,
+                  CircleAvatar(
+                    radius: 30,
+                    backgroundColor: isPressed3?Colors.black12:Colors.lightGreen,
+                    child: IconButton(onPressed: (){
+                      setState(() {
+                        isPressed3 = !isPressed3;
+                      });
+                    },
+                        icon: Icon(
+                          Icons.lightbulb,
+                          size: 25,
+                          color: isPressed3
+                              ? Colors.grey
+                              : Colors.white70,
 
-                  ),
+                        )),),
+                  CircleAvatar(
+                    radius: 30,
+                    backgroundColor: isPressed4?Colors.black12:Colors.lightGreen,
+                    child: IconButton(onPressed: (){
+                      setState(() {
+                        isPressed4 = !isPressed4;
+                      });
+                    },
+                        icon: Icon(
+                          Icons.lightbulb,
+                          size: 25,
+                          color: isPressed4
+                              ? Colors.grey
+                              : Colors.white70,
 
-                  ),
-                  IconButton(onPressed:(){},
-                    icon: const Icon(
-                    MyFlutterApp.fan,
-                    size: 24,
-                    )
-                  )
-
+                        )),)
 
                 ],
               ),),
